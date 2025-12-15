@@ -1,5 +1,5 @@
 import { createRoot } from 'react-dom/client';
-import { Cart } from './Cart';
-import './style.css'
+import Cart from './cart/Cart';
+import './cart/cart.css';
 
-createRoot(document.getElementById('cart')).render(<Cart />)
+createRoot(document.getElementById('cart-root')).render(<Cart />)
