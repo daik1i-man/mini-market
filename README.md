@@ -82,7 +82,7 @@ mini-marketplace/
 ```
 
 ## Demo:
-[Live Demo](https://your-demo-link.vercel.app)
+[Live Demo](https://daik1i-man-mini-market.netlify.app)
 
 ---
 
