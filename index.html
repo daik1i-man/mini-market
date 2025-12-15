@@ -11,12 +11,19 @@
 </head>
 
 <body>
-  <i data-lucide="shop"></i>
-  <section id="products-root"></section>
-  <section id="cart-root"></section>
+  <div id="layout">
+    <div>
+      <h1 class="title">Products</h1>
+      <section id="products-root"></section>
+    </div>
+    <div>
+      <h1 class="title">Cart</h1>
+      <section id="cart-root"></section>
+    </div>
+  </div>
 
-  <script type="module" src="/src/products/products.js"></script>
   <script type="module" src="/src/main.jsx"></script>
+  <script type="module" src="/src/products/products.js"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
   <script>
     lucide.createIcons();

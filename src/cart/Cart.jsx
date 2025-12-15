@@ -1,9 +1,7 @@
-function Cart() {
+import CardList from './CartList';
 
-  return (
-    <div>
-      <h1></h1>
-    </div>)
+function Cart() {
+  return <CardList />;
 }
 
 export default Cart;
