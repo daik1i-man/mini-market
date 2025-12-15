@@ -1,0 +1,40 @@
+.card-list {
+    display: grid;
+    gap: 20px;
+}
+
+.empty-text {
+    text-align: center;
+}
+
+.card-item {
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 15px;
+    color: #213547;
+    font-size: smaller;
+    box-sizing: border-box;
+    align-items: start;
+}
+
+.card-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.card-item button {
+    margin: auto;
+}
+
+.card-item-container {
+    display: flex;
+    gap: 40px;
+    align-items: start;
+}
+
+.cart-item-texts-row{
+    display: flex;
+    justify-content: space-between;
+}

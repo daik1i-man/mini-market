@@ -14,18 +14,35 @@ function render(products) {
         card.innerHTML = `
       <img src="${p.image}" alt="${p.title}" />
       <h3>${p.title}</h3>
-      <p>$${p.price}</p>
-      <button>Savatga qo'shish</button>
+      <p>${p.price} $</p>
+      <button>Add to cart</button>
     `;
 
         card.querySelector("button").onclick = () => {
             window.dispatchEvent(
                 new CustomEvent("add-to-cart", { detail: p })
             );
+
+            handleAddCart(p);
         };
+
 
         productsLayout.appendChild(card);
     });
 
     root.appendChild(productsLayout);
+}
+
+function handleAddCart(product) {
+    const cartProducts = JSON.parse(localStorage.getItem('cart-products')) || [];
+
+    const exist = cartProducts.findIndex(item => item.id === product.id);
+
+    if (exist !== -1) {
+        cartProducts[exist].quantity += 1;
+    } else {
+        cartProducts.push({ ...product, quantity: 1 })
+    }
+
+    localStorage.setItem('cart-products', JSON.stringify(cartProducts));
 }
