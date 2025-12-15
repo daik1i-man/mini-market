@@ -6,7 +6,7 @@
 **Alimboyev Jo'shqin Shuxrat Og'li**
 
 ## Vazifa qancha vaqt oldi:
-**5-6 soat**
+**17 soat**
 
 ## Qiyin bo'lgan joylar:
 - Grid layout sozlash
