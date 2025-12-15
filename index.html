@@ -4,16 +4,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/products/products.css">
+  <link rel="stylesheet" href="src/cart/cart.css">
+  <link rel="stylesheet" href="src/style.css">
   <title>Mini market</title>
 </head>
 
 <body>
-  <div id="layout">
-    <section id="cart"></section>
-    <section id="products"></section>
-  </div>
+  <i data-lucide="shop"></i>
+  <section id="products-root"></section>
+  <section id="cart-root"></section>
 
+  <script type="module" src="/src/products/products.js"></script>
   <script type="module" src="/src/main.jsx"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 
 </html>
